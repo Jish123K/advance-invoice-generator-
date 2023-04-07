@@ -159,5 +159,25 @@ products = [
 
 product_records = []
     
+async with db.transaction():
+
+    for product in products:
+
+        query = products_table.insert().values(
+
+            product_name=product['product_name'],
+
+            quantity_init=product['quantity_init'],
+
+            quantity_left=product['quantity_left']
+
+        )
+
+        product_record = await db.fetch_one(query)
+
+        product_records.append(product_record)
+
+return product_records
+
 
 
