@@ -304,5 +304,7 @@ def get_db(self):
     finally:
 
         db.close()
+db = DB()
 
+Base.metadata.create_all(bind=db.engine)
 
