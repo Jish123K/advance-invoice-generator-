@@ -238,5 +238,23 @@ paid = Column(Boolean, default=False)
 created_at = Column(DateTime, default=datetime.utcnow)
 
 items = relationship("InvoiceItem", back_populates="invoice")
+id = Column(Integer, primary_key=True, index=True)
+
+reference = Column(String, index=True)
+
+value_net = Column(Integer)
+
+payment_due = Column(Integer)
+
+actual_payment = Column(Integer)
+
+invoice_owner_id = Column(Integer, ForeignKey("users.id"))
+
+paid = Column(Boolean, default=False)
+
+created_at = Column(DateTime, default=datetime.utcnow)
+
+items = relationship("InvoiceItem", back_populates="invoice")
+
 
 
