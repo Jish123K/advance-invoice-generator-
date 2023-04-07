@@ -208,5 +208,17 @@ class InvoiceItem(Base):
 
     __tablename__ = "invoice_items"
 
-    id = Column(Integer, primary
+    id = Column(Integer, primary...keys=True, index=True)
+
+product_name = Column(String, index=True)
+
+quantity = Column(Integer)
+
+prix_unit = Column(Integer)
+
+invoice_id = Column(Integer, ForeignKey("invoices.id"))
+
+class Invoice(Base):
+
+tablename = "invoices
 
