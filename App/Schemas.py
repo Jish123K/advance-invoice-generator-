@@ -291,4 +291,18 @@ settings.SQLALCHEMY_DATABASE_URI, pool_pre_ping=True
 )
 
 self.SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
+def get_db(self):
+
+    db = None
+
+    try:
+
+        db = self.SessionLocal()
+
+        yield db
+
+    finally:
+
+        db.close()
+
 
