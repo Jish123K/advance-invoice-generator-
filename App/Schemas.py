@@ -280,5 +280,15 @@ def __unicode__(self):
     return self.__repr__()
 
 
+class DB:
 
+def init(self):
+
+self.engine = create_engine(
+
+settings.SQLALCHEMY_DATABASE_URI, pool_pre_ping=True
+
+)
+
+self.SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
 
