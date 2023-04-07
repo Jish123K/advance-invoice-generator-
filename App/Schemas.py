@@ -354,3 +354,15 @@ def get_db() -> Session:
 
         db.close()
 
+from sqlalchemy.orm import Session
+
+def some_database_operation():
+
+    with db.get_db() as db_session:
+
+        # perform database operation using db_session
+
+        # for example:
+
+        users = db_session.query(User).all()
+
