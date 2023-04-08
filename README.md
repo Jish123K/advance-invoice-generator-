@@ -33,3 +33,20 @@ python invoice.py -s
 This will save the invoice file in the current directory. Users can then send the invoice to their customer by email or by printing it out.
 
 The Advance Invoice Generator is a useful tool for businesses that need to create invoices quickly and easily. The project is open-source and available on GitHub, so users can customize it to meet their specific needs.
+Here are some of the features of the Advance Invoice Generator:
+
+It is a Python-based project.
+
+It is open-source and available on GitHub.
+
+It allows users to create invoices for their business.
+
+It includes the following information on the invoice: invoice number, date of invoice, customer's name and address, product or service that was sold, quantity of the product or service that was sold, unit price of the product or service, total amount due, and payment terms.
+
+Users can edit the invoice file to add additional information, such as the invoice description and the tax rate.
+
+Users can save the invoice file by running the following command: python invoice.py -s.
+
+The invoice file can be sent to the customer by email or by printing it out.
+
+The Advance Invoice Generator is a useful tool for businesses that need to create invoices quickly and easily. The project is open-source and available on GitHub, so users can customize it to meet their specific needs.
