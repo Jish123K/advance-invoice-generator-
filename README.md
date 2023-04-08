@@ -10,3 +10,26 @@ Once the dependencies are installed, users can create a new invoice by running t
 python invoice.py
 
 This will create a new invoice file in the current directory. The invoice file will include the following information:
+The invoice number
+
+The date of the invoice
+
+The customer's name and address
+
+The product or service that was sold
+
+The quantity of the product or service that was sold
+
+The unit price of the product or service
+
+The total amount due
+
+The payment terms
+
+Users can then edit the invoice file to add additional information, such as the invoice description and the tax rate. When the invoice is complete, users can save it by running the following command:
+
+python invoice.py -s
+
+This will save the invoice file in the current directory. Users can then send the invoice to their customer by email or by printing it out.
+
+The Advance Invoice Generator is a useful tool for businesses that need to create invoices quickly and easily. The project is open-source and available on GitHub, so users can customize it to meet their specific needs.
